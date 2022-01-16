@@ -9,16 +9,21 @@ function reverseString(str) {
 
 if (require.main === module) {
   // add your own tests in here
-  console.log("Expecting: 'ippississim");
+  console.log("Expecting: 'ippississim"); //normal uncapitilzed string
   console.log("=>", reverseString("mississippi"));
 
-  console.log("Expecting: 'ih'");
-  console.log("=>", reverseString("hi"));
+  console.log("Expecting: 'iH'"); //capitalized string
+  console.log("=>", reverseString("Hi"));
 
   console.log("");
 
-  console.log("Expecting: 'ybabtac'");
-  console.log("=>", reverseString("catbaby"));
+  console.log("Expecting: 'ybab-tac'"); //hypenated string
+  console.log("=>", reverseString("cat-baby"));
+
+  console.log("");
+
+  console.log("Expecting: 'sgod yppah'"); //two words with a space
+  console.log("=>", reverseString("happy dogs"));
 }
 
 module.exports = reverseString;
